@@ -11,3 +11,9 @@ class Solution:
             new.random = deepcopy(n.random)
             return new
         return deepcopy(head)
+
+#ALTERNATE SOLUTION
+
+class Solution:
+    def copyRandomList(self,head):
+        return deepcopy(head)
