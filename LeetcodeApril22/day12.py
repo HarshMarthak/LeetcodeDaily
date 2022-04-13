@@ -10,10 +10,10 @@ class Solution:
                     if 0 <= nr < m and 0 <= nc < n and abs(board[nr][nc]) == 1:
                         livecount += 1
                 if board[i][j] == 1:
-                    if livecount < 2 or livecount > 3:
+                    if livecount < 2 or livecount > 3:   
                         board[i][j] = -1
                 else:
-                    if livecount == 3:
+                    if livecount == 3:  
                         board[i][j] = 2
         for i in range(m):
             for j in range(n):
